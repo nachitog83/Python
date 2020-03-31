@@ -8,6 +8,7 @@ for line in handle :
     lst = line.split()
     if len(lst) < 3 or lst[0] != 'From' : continue
     host = lst[1][lst[1].find('@')+1:]
+    print(host)
     counts[host] = counts.get(host,0) + 1
 
 print(counts)        
